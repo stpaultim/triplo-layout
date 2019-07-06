@@ -1,0 +1,41 @@
+type = layout
+name = Triplo
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header_half1]     = Header
+regions[header_half2]     = Header
+regions[top]              = Top
+regions[content]          = Content
+regions[sidebar]          = First Sidebar
+regions[sidebar2]         = Second Sidebar
+regions[third1]           = Tryptych First
+regions[third2]           = Tryptych Second
+regions[third3]           = Tryptych Third
+regions[quarter1]         = Quarter First
+regions[quarter2]         = Quarter Second
+regions[quarter3]         = Quarter Third
+regions[quarter4]         = Quarter Fourth
+regions[bottom]           = Bottom
+regions[footer]           = Footer
+
+; The default region automatically receives the "Main Content" block if needed.
+default region = content
+
+; Preview
+preview = triplo.png
+
+; Include the Bootstrap4 Grid System
+libraries[] = bootstrap4-gs
+
+; Include file for special preprocessing of this layout's variables.
+file = triplo.php
+
+; Default stylesheets for this layout
+; stylesheets[all][] = triplo.css
+
+; Added by Backdrop CMS packaging script on 2019-05-31
+project = backdrop
+version = 1.13.2
+timestamp = 1559351624
